@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "lodash": "4.17.20",
+    "axios": "1.5.0",
+    "jsonwebtoken": "8.5.1"
+  },
+  "devDependencies": {
+    "semver": "7.3.8"
+  }
+}

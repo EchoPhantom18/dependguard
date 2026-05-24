@@ -1,0 +1,332 @@
+.auth-page {
+  position: fixed;
+  inset: 0;
+  height: 100vh;
+  height: 100svh;
+  min-height: 100vh;
+  min-height: 100svh;
+  overflow: hidden;
+  background: #030617;
+  color: #ffffff;
+}
+
+body:has(.auth-page) {
+  overflow: hidden;
+}
+
+.background-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(42, 199, 255, 0.16), transparent 25%),
+    radial-gradient(circle at 80% 30%, rgba(139, 92, 246, 0.22), transparent 30%),
+    #030617;
+}
+
+.spline-stage {
+  position: absolute;
+  inset: 0 0 0 min(500px, 38vw);
+  overflow: hidden;
+}
+
+.spline-stage spline-viewer {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  transform: scale(1.02);
+  transform-origin: center;
+}
+
+.background-container a[href*="spline.design"],
+.background-container [aria-label*="Spline" i],
+.background-container [title*="Spline" i] {
+  display: none !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(3, 6, 23, 0.98) 0%, rgba(3, 6, 23, 0.9) 35%, rgba(3, 6, 23, 0.5) 62%, rgba(3, 6, 23, 0.22) 100%),
+    radial-gradient(circle at 38% 52%, rgba(34, 211, 238, 0.18), transparent 24%),
+    linear-gradient(rgba(40, 215, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(139, 92, 246, 0.035) 1px, transparent 1px);
+  background-size: auto, auto, 38px 38px, 38px 38px;
+}
+
+.login-container {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(320px, 500px) minmax(0, 1fr);
+  min-height: 100vh;
+  min-height: 100svh;
+  height: 100vh;
+  height: 100svh;
+  align-items: center;
+  justify-items: center;
+  padding: clamp(16px, 3vw, 42px);
+  overflow: hidden;
+}
+
+.glass-panel {
+  position: relative;
+  z-index: 10;
+  width: min(448px, 100%);
+  max-height: 90vh;
+  max-height: 90svh;
+  overflow-y: auto;
+  padding: clamp(22px, 3vw, 28px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(12, 18, 38, 0.84), rgba(10, 13, 31, 0.62));
+  box-shadow: 0 30px 100px rgba(0, 0, 0, 0.42), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(22px);
+  scrollbar-width: thin;
+  scrollbar-color: rgba(103, 232, 249, 0.38) transparent;
+}
+
+.glass-panel::-webkit-scrollbar {
+  width: 6px;
+}
+
+.glass-panel::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: rgba(103, 232, 249, 0.38);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  display: grid;
+  width: 44px;
+  height: 44px;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #23d5ff, #8b5cf6);
+  box-shadow: 0 0 26px rgba(35, 213, 255, 0.35);
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: clamp(25px, 2.6vw, 30px);
+  font-weight: 800;
+}
+
+.subtitle {
+  margin: 14px 0 20px;
+  color: rgba(226, 232, 240, 0.78);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.input-group {
+  margin-bottom: 12px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 7px;
+  color: #e2e8f0;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.input-group input {
+  width: 100%;
+  min-height: 48px;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 14px;
+  background: rgba(2, 6, 23, 0.58);
+  color: #ffffff;
+  outline: none;
+  padding: 0 14px;
+  transition: border 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.input-group input::placeholder {
+  color: rgba(148, 163, 184, 0.72);
+}
+
+.input-group input:focus {
+  border-color: rgba(35, 213, 255, 0.72);
+  box-shadow: 0 0 0 4px rgba(35, 213, 255, 0.12);
+  background: rgba(2, 6, 23, 0.74);
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 2px 0 14px;
+  color: rgba(226, 232, 240, 0.76);
+  font-size: 14px;
+}
+
+.remember-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.remember-me input {
+  accent-color: #22d3ee;
+}
+
+.forgot-password,
+.signup-link a {
+  color: #67e8f9;
+  text-decoration: none;
+}
+
+.forgot-password:hover,
+.signup-link a:hover {
+  color: #c4b5fd;
+}
+
+.login-btn,
+.github-btn,
+.gitlab-btn {
+  width: 100%;
+  min-height: 48px;
+  border: 0;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+.login-btn {
+  color: #030617;
+  background: linear-gradient(135deg, #23d5ff, #a78bfa);
+  box-shadow: 0 14px 32px rgba(35, 213, 255, 0.25);
+}
+
+.login-btn:hover,
+.github-btn:hover,
+.gitlab-btn:hover {
+  transform: translateY(-1px);
+}
+
+.login-btn:disabled {
+  cursor: wait;
+  opacity: 0.72;
+}
+
+.auth-message {
+  min-height: 18px;
+  margin: 10px 0 0;
+  color: #fecdd3;
+  font-size: 14px;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 12px 0 8px;
+  color: rgba(226, 232, 240, 0.58);
+  font-size: 13px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(148, 163, 184, 0.22);
+}
+
+.github-btn,
+.gitlab-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #f8fafc;
+  background: rgba(255, 255, 255, 0.07);
+}
+
+.github-btn:hover,
+.gitlab-btn:hover {
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.signup-link {
+  margin: 14px 0 0;
+  text-align: center;
+  color: rgba(226, 232, 240, 0.74);
+  font-size: 14px;
+}
+
+.signup-link a {
+  margin-left: 6px;
+  font-weight: 700;
+}
+
+@media (max-width: 1023px) {
+  .auth-page {
+    overflow: hidden;
+  }
+
+  .spline-stage {
+    display: none;
+  }
+
+  .bg-overlay {
+    background:
+      linear-gradient(135deg, rgba(3, 6, 23, 0.98) 0%, rgba(3, 6, 23, 0.82) 100%),
+      radial-gradient(circle at 50% 18%, rgba(34, 211, 238, 0.18), transparent 30%),
+      radial-gradient(circle at 80% 80%, rgba(139, 92, 246, 0.16), transparent 30%);
+  }
+
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    overflow: hidden;
+  }
+
+  .glass-panel {
+    width: min(448px, 92vw);
+    max-height: calc(100svh - 28px);
+    margin: auto;
+    padding: 22px;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .form-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .logo-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .input-group input,
+  .login-btn,
+  .github-btn,
+  .gitlab-btn {
+    min-height: 46px;
+  }
+}

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DependGuard Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.51/build/spline-viewer.js"></script>
+  </head>
+  <body>
+    <div class="background-container" aria-hidden="true">
+      <spline-viewer url="https://prod.spline.design/959JIazaE0Tgcak0/scene.splinecode"></spline-viewer>
+      <div class="bg-overlay"></div>
+    </div>
+
+    <main class="login-container">
+      <section class="glass-panel" aria-labelledby="auth-title">
+        <div class="logo">
+          <div class="logo-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <h1 id="auth-title">DependGuard</h1>
+        </div>
+
+        <p id="authSubtitle" class="subtitle">
+          AI-powered dependency vulnerability analysis. Secure your packages today.
+        </p>
+
+        <form id="login-form">
+          <div class="input-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="security@yourcompany.com" required autocomplete="email">
+          </div>
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required autocomplete="current-password">
+          </div>
+
+          <div class="form-actions">
+            <label class="remember-me">
+              <input id="rememberMe" type="checkbox" name="remember">
+              Remember me
+            </label>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+
+          <button id="authButton" type="submit" class="login-btn">Sign In</button>
+          <p id="authMessage" class="auth-message" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="divider">
+          <span>or continue with</span>
+        </div>
+
+        <button class="github-btn" type="button" data-provider="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"></path>
+          </svg>
+          GitHub
+        </button>
+        <button class="gitlab-btn" type="button" data-provider="GitLab">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M23.955 13.587l-1.342-4.135-2.664-8.189c-.135-.423-.73-.423-.867 0L16.418 9.45H7.582L4.919 1.263c-.137-.423-.733-.423-.868 0L1.387 9.452.045 13.587c-.173.535.022 1.131.466 1.454l11.489 8.354 11.49-8.354c.443-.323.638-.919.465-1.454M12 21.609L2.859 14.96h18.282L12 21.609z"></path>
+          </svg>
+          GitLab
+        </button>
+
+        <p class="signup-link">
+          <span id="modePrompt">Don't have an account?</span>
+          <a id="modeToggle" href="#">Create an account</a>
+        </p>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='js/login.js') }}"></script>
+  </body>
+</html>

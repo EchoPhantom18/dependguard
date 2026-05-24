@@ -1,0 +1,5 @@
+Flask==3.1.2
+packaging==25.0
+
+# Optional for live Python vulnerability scans:
+# pip-audit==2.9.0
