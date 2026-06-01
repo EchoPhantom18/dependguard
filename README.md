@@ -1,110 +1,55 @@
-DependGuard
+🛡️ DependGuard
 
-AI-powered dependency vulnerability analysis and software supply-chain security platform.
-
-DependGuard helps developers scan dependency manifests, detect real CVEs using OSV intelligence, generate safer manifests, analyze supply-chain risks, visualize dependency attack graphs, and generate security reports.
+DependGuard is a full-stack dependency vulnerability scanner that helps developers identify insecure packages, analyze software supply-chain risks, and generate safer dependency manifests using live vulnerability intelligence.
 
 ✨ Features
-🔍 Dependency Scanning
-Scan:
+🔍 Scan dependency files (requirements.txt, package.json, pom.xml, Pipfile)
+🛡️ Live OSV & CVE vulnerability detection
+📊 Risk Score & Security Score calculation
+🤖 Beginner-friendly risk explanations
+📄 PDF Security Reports
+🔐 Google & GitHub OAuth Authentication
+📧 Forgot Password & Email Verification
+🌙 Dark/Light Mode
+📜 Scan History & Report Management
+🏗️ Tech Stack
+
+Frontend
+
+React
+Vite
+
+Backend
+
+Flask
+SQLAlchemy
+JWT Authentication
+
+Database
+
+PostgreSQL (Neon)
+SQLite (Development)
+
+Deployment
+
+Render
+Neon PostgreSQL
+🚀 Live Website
+[Visit Website](https://dependguard-frontend.onrender.com)
+ 
+📂 Supported Files
 requirements.txt
 package.json
 pom.xml
 Pipfile
-Detect vulnerable packages using live OSV CVE intelligence
-🧠 AI Security Explanations
-Beginner-friendly vulnerability explanations
-AI remediation suggestions
-Risk reasoning and fix recommendations
-🛡️ Supply Chain Security
-Supply-chain risk scoring
-Typosquatting detection
-Abandoned package analysis
-License compliance analysis
-📊 Interactive Dashboard
-Real-time scan telemetry
-Risk score visualization
-Severity breakdown
-Beginner-friendly explanations
-🌐 Repository Scanning
+🎯 Future Improvements
+GitHub Repository Scanning
+SBOM Generation
+Docker Support
+CI/CD Integration
+Security Alerts & Monitoring
+👨‍💻 Author
 
-Scan public GitHub repositories directly.
-
-Example:
-
-https://github.com/juice-shop/juice-shop
-📈 Dependency Attack Graph
-
-Visualize:
-
-dependency relationships
-vulnerable paths
-transitive dependencies
-📄 Security Reports
-
-Generate:
-
-PDF reports
-scan history
-vulnerability summaries
-remediation suggestions
-🔐 Authentication
-
-Supports:
-
-Email/password login
-Google OAuth
-GitHub OAuth
-GitLab OAuth
-Forgot password flow
-🖼️ Screenshots
-Dashboard
-
-Modern cyberpunk-style security dashboard with:
-
-risk analytics
-scan telemetry
-supply-chain insights
-Scan Results
-
-Interactive vulnerability table with:
-
-CVE data
-fix recommendations
-collapsible explanations
-Attack Graph
-
-Dependency visualization powered by React Flow.
-
-🏗️ Tech Stack
-Frontend
-React
-Vite
-Tailwind CSS
-Framer Motion
-React Flow
-Backend
-Flask
-SQLAlchemy
-JWT Authentication
-Flask-Mail
-OSV API Integration
-Database
-SQLite (development)
-PostgreSQL (production)
-🚀 Deployment
-Frontend
-
-Deploy on:
-
-Vercel
-Backend
-
-Deploy on:
-
-Render
-Database
-
-Use:
-
-Render PostgreSQL
+Tanmay Varma
+B.Tech CSE (AI & ML)
+GLA University, Mathura
