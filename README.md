@@ -15,31 +15,31 @@ DependGuard is a full-stack dependency vulnerability scanner that helps develope
 
 🏗️ Tech Stack
 
-Frontend
+Frontend:-
 React
 Vite
 
-Backend
+Backend:-
 Flask
 SQLAlchemy
 JWT Authentication
 
-Database
+Database:-
 PostgreSQL (Neon)
-SQLite (Development)
 
-Deployment
+Deployment:-
 Render
 Neon PostgreSQL
 
 🚀 Live Website
 [Visit Website](https://dependguard-frontend.onrender.com)
  
-📂 Supported Files
+📂 Supported Files:-
 requirements.txt
 package.json
 pom.xml
 Pipfile
+
 🎯 Future Improvements
 GitHub Repository Scanning
 SBOM Generation
