@@ -46,8 +46,11 @@ SBOM Generation
 Docker Support
 CI/CD Integration
 Security Alerts & Monitoring
+
 👨‍💻 Author
 
 Tanmay Varma
+
 B.Tech CSE (AI & ML)
+
 GLA University, Mathura
