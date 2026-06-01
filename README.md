@@ -32,7 +32,7 @@ Render
 Neon PostgreSQL
 
 🚀 Live Website
-[Visit Website](https://dependguard-frontend.onrender.com)
+[Visit Dependguard](https://dependguard-frontend.onrender.com)
  
 📂 Supported Files:-
 requirements.txt
