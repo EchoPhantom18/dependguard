@@ -12,28 +12,26 @@ DependGuard is a full-stack dependency vulnerability scanner that helps develope
 📧 Forgot Password & Email Verification
 🌙 Dark/Light Mode
 📜 Scan History & Report Management
+
 🏗️ Tech Stack
 
 Frontend
-
 React
 Vite
 
 Backend
-
 Flask
 SQLAlchemy
 JWT Authentication
 
 Database
-
 PostgreSQL (Neon)
 SQLite (Development)
 
 Deployment
-
 Render
 Neon PostgreSQL
+
 🚀 Live Website
 [Visit Website](https://dependguard-frontend.onrender.com)
  
